@@ -1,0 +1,222 @@
+/*
+ * DbleClick Global Services - Website Styles
+ *
+ * This stylesheet defines a clean, modern design with responsive layouts and
+ * accessibility considerations. It focuses on clear typography, ample white
+ * space and strong visual hierarchy to guide visitors toward calls to action.
+ */
+
+/* Global resets and typography */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #222;
+    line-height: 1.5;
+    background-color: #f7f9fc;
+}
+
+h1, h2, h3 {
+    margin: 0 0 0.5em 0;
+    font-weight: 600;
+    color: #0d3b66;
+}
+
+p {
+    margin: 0 0 1em 0;
+    max-width: 800px;
+}
+
+a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Hero section */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.hero-overlay {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    max-width: 80%;
+}
+
+.hero-overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5em;
+}
+
+.hero-overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5em;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #1ca88e;
+    color: #fff;
+    padding: 0.75em 1.5em;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #14866c;
+}
+
+/* Section layout */
+.section {
+    padding: 4em 1em;
+    text-align: center;
+}
+
+.services .service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.service-item {
+    background-color: #fff;
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    max-width: 300px;
+}
+
+/* Lead magnet form */
+.lead-form,
+.contact-form {
+    max-width: 600px;
+    margin: 2em auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.lead-form label,
+.contact-form label {
+    font-weight: bold;
+    text-align: left;
+}
+
+.lead-form input,
+.contact-form input,
+.contact-form textarea {
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.lead-form button,
+.contact-form button {
+    background-color: #0d3b66;
+    color: #fff;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.lead-form button:hover,
+.contact-form button:hover {
+    background-color: #09254a;
+}
+
+/* Testimonials */
+.testimonials .testimonial {
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin: 1em auto;
+    max-width: 700px;
+}
+
+.testimonials .testimonial span {
+    display: block;
+    margin-top: 0.5em;
+    font-style: italic;
+    color: #555;
+}
+
+/* Social links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 2em;
+    flex-wrap: wrap;
+}
+
+.social-links a {
+    color: #0d3b66;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #1ca88e;
+}
+
+/* Footer */
+.footer {
+    background-color: #0d3b66;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero-overlay h1 {
+        font-size: 2rem;
+    }
+    .hero-overlay p {
+        font-size: 1rem;
+    }
+    .services .service-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+}
